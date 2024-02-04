@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h2>Дитячий центр розвитку</h2>
+        <h1>Чарівне зернятко</h1>
+      </div>
+    </header>
+
+    <nav class="sticky navbar">
+      <div class="brand display__logo">
+        <a href="#top" class="nav__link">
+          <span class="logo">Чарівне зернятко</span></a
+        >
+      </div>
+
+      <input type="checkbox" id="nav" class="hidden" />
+      <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
+      <div class="nav">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefits" class="nav__link">Benefits</a>
+          </li>
+          <li class="nav__item">
+            <a href="#courses" class="nav__link">Courses</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="about">
+        <div id="about"></div>
+      </section>
+      <div class="info-block">
+        <p>
+          <b
+            >Цікавий факт: У дошкільному віці дитина починає усвідомлювати свою
+            відмінність від решти</b
+          ><br />
+          У дошкільному віці дитина починає усвідомлювати свою відмінність від
+          решти Дитина кричить: «Моє!», коли одноліток забирає в неї іграшку.
+          Маленькі діти неохоче діляться тим, що належить їм. Крім цього, слід
+          пам'ятати, що в дошкільному віці дитина починає усвідомлювати себе як
+          окрему особистість. І це добре. Вона починає розуміти, що в чомусь не
+          схожа на своїх друзів і на вас. <br /><b
+            ><i>Це важливий етап у розвитку її пізнавальної сфери.</i></b
+          >
+        </p>
+      </div>
+      <section class="benefits">
+        <div id="benefits"></div>
+      </section>
+      <div class="info-block">
+        <p>
+          <b>
+            Цікавий факт: Коли дошкільник закриває очі, він думає, що ви теж у
+            цей момент не бачите </b
+          ><br />
+          Ви можете спостерігати таку дивну ситуацію: дитина прикриває очі рукою
+          й заходить у кімнату, щоб узяти цукерки. У кімнаті перебуваєте ви.
+          Дитина думає, що ви не бачите її, бо вона не бачить вас. Дорослим це
+          здається смішним, але дитина справді так думає. Вона ще не може
+          мислити логічно і все розуміє буквально. <br /><b
+            ><i
+              >Тому краще не говорити дошкільнику фраз на кшталт: «А якщо всі
+              підуть стрибати з моста в річку?».</i
+            ></b
+          >
+        </p>
+      </div>
+      <section class="courses">
+        <div id="courses"></div>
+      </section>
+      <div class="info-block">
+        <p>
+          <b
+            >Цікавий факт: Діти структурують інформацію в пам'яті із семирічного
+            віку </b
+          ><br />Дитина може запам'ятовувати інформацію і в молодшому віці, але
+          тільки із семи років вона використовує стратегії – певні схеми й інші
+          хитрощі – для запам'ятовування. <br /><b
+            ><i
+              >Це допомагає їй запам'ятовувати більший обсяг інформації, який
+              згодом стане їй у нагоді в навчальному процесі або інших життєвих
+              ситуаціях.</i
+            ></b
+          >
+        </p>
+      </div>
+      <section class="contact">
+        <div id="contact">
+          <div class="contacts">
+            <h2 class="title">Контакти</h2>
+            <div class="contacts__wrapper">
+              <div class="contacts__wrapper__address">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.476295697542!2d30.481220277024434!3d50.320364596721234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7f70dcf25c7%3A0xe0b1911f8b946a9b!2z0LLRg9C70LjRhtGPINCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRliwgMTAsINCl0L7RgtGW0LIsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNzE!5e0!3m2!1suk!2sua!4v1706699941223!5m2!1suk!2sua"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="contacts__wrapper__form-box">
+                <span class="title">Leave a Comment</span>
+                <form class="form">
+                  <div class="group">
+                    <input placeholder="" type="text" required="" />
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="group">
+                    <input
+                      placeholder=""
+                      type="email"
+                      id="email"
+                      name="email"
+                      required=""
+                    />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="group">
+                    <textarea
+                      placeholder=""
+                      id="comment"
+                      name="comment"
+                      rows="5"
+                      required=""
+                    ></textarea>
+                    <label for="comment">Comment</label>
+                  </div>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h1>Footer</h1>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
