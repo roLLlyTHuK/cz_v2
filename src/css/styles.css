@@ -198,6 +198,8 @@ nav ul li {
   gap: 2rem;
   margin: 0;
   padding: 0;
+  filter: blur(5px);
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 .about-benefits ul li {
   min-width: 300px;
@@ -241,6 +243,8 @@ nav ul li {
   gap: 2rem;
   margin: 0;
   padding: 0;
+  filter: blur(5px);
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 .classes-group ul li {
   border: 1px solid var(--black-color);
@@ -311,6 +315,8 @@ nav ul li {
 
 .cost-container div {
   border: 1px solid var(--black-color);
+  filter: blur(5px);
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 
 /*============================|Contacts|===========================*/
@@ -341,6 +347,8 @@ nav ul li {
   background-color: var(--white-color);
   border-radius: 10px;
   margin: 0 auto;
+  filter: blur(5px);
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 .contacts-map iframe {
   width: 100%;
@@ -360,6 +368,8 @@ nav ul li {
   background-color: var(--white-color);
   border-radius: 10px;
   margin: 0 auto;
+  filter: blur(5px);
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 .form {
   width: 100%;
