@@ -102,6 +102,12 @@ nav ul li {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--black-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li a:hover {
+  color: var(--red-color);
 }
 
 /*============================|hero|===========================*/
@@ -484,8 +490,8 @@ footer {
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer a,
@@ -495,6 +501,7 @@ footer {
 }
 .footer-logo h2 {
   color: var(--pink-color);
+  margin-bottom: 0.3rem;
 }
 .footer-logo h2 span {
   color: var(--red-color);
@@ -511,6 +518,11 @@ footer {
   gap: 1.6rem;
   margin: 0;
   padding: 0;
+}
+.footer-social ul li img {
+  border-radius: 8px;
+  width: 26px;
+  height: 26px;
 }
 /*============================|Media Queries|===========================*/
 @media only screen and (min-width: 768px) {
@@ -531,6 +543,10 @@ footer {
   a {
     font-size: 1.1rem;
   }
+  .footer-social ul li img {
+    width: 32px;
+    height: 32px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .container {
@@ -549,6 +565,15 @@ footer {
     width: 50%;
     min-width: 300px;
     text-align: justify;
+  }
+  .footer-address,
+  .footer-social {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-social ul li img {
+    width: 36px;
+    height: 36px;
   }
 }
 @media only screen and (min-width: 1280px) {
