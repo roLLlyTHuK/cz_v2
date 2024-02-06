@@ -4,156 +4,306 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-
+    <title>Чарівне зернятко</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&family=Shantell+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <h2>Дитячий центр розвитку</h2>
-        <h1>Чарівне зернятко</h1>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#classes">Навчання</a></li>
+            <li><a href="#cost">Вартість</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-
-    <nav class="sticky navbar">
-      <div class="brand display__logo">
-        <a href="#top" class="nav__link">
-          <span class="logo">Чарівне зернятко</span></a
-        >
-      </div>
-
-      <input type="checkbox" id="nav" class="hidden" />
-      <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
-      <div class="nav">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#benefits" class="nav__link">Benefits</a>
-          </li>
-          <li class="nav__item">
-            <a href="#courses" class="nav__link">Courses</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
     <main>
-      <section class="about">
-        <div id="about"></div>
+      <section id="hero">
+        <div class="container hero">
+          <div class="hero-blank">
+            <div class="hero-title">
+              <h2>Ласкаво просимо відвідати</h2>
+              <h1>Чарівне зернятко</h1>
+              <h2>Дитячий центр розвитку</h2>
+            </div>
+            <div class="hero-description">
+              <p>
+                Це місце, де кожна дитина може розкрити свій потенціал і весело
+                провести час
+              </p>
+            </div>
+            <a href="#contacts" class="hero-button">Завітати на огляд</a>
+          </div>
+        </div>
       </section>
-      <div class="info-block">
-        <p>
-          <b
-            >Цікавий факт: У дошкільному віці дитина починає усвідомлювати свою
-            відмінність від решти</b
-          ><br />
-          У дошкільному віці дитина починає усвідомлювати свою відмінність від
-          решти Дитина кричить: «Моє!», коли одноліток забирає в неї іграшку.
-          Маленькі діти неохоче діляться тим, що належить їм. Крім цього, слід
-          пам'ятати, що в дошкільному віці дитина починає усвідомлювати себе як
-          окрему особистість. І це добре. Вона починає розуміти, що в чомусь не
-          схожа на своїх друзів і на вас. <br /><b
-            ><i>Це важливий етап у розвитку її пізнавальної сфери.</i></b
-          >
-        </p>
-      </div>
-      <section class="benefits">
-        <div id="benefits"></div>
+      <section id="about">
+        <div class="container">
+          <div class="about-title">
+            <h2>Що таке Чарівне зернятко</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde
+              dolorem ipsa cumque provident voluptatum deleniti, cum distinctio
+              iure non! Magni, tempore ipsam sed minus est ut explicabo aut
+              neque!
+            </p>
+          </div>
+          <div class="about-benefits">
+            <h2>Наші переваги</h2>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+            </ul>
+          </div>
+          <div class="about-description">
+            <h2>Як ми вчимо</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              iure, corporis minima aut in ratione architecto nesciunt esse
+              laborum porro mollitia voluptas? Magnam minima quia quidem nam
+              beatae rerum vero?<br />Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Quasi provident, totam aut amet numquam possimus
+              cum sint ullam quos deleniti illo sed nulla deserunt perferendis
+              facilis alias beatae fuga optio.
+            </p>
+          </div>
+        </div>
       </section>
-      <div class="info-block">
-        <p>
-          <b>
-            Цікавий факт: Коли дошкільник закриває очі, він думає, що ви теж у
-            цей момент не бачите </b
-          ><br />
-          Ви можете спостерігати таку дивну ситуацію: дитина прикриває очі рукою
-          й заходить у кімнату, щоб узяти цукерки. У кімнаті перебуваєте ви.
-          Дитина думає, що ви не бачите її, бо вона не бачить вас. Дорослим це
-          здається смішним, але дитина справді так думає. Вона ще не може
-          мислити логічно і все розуміє буквально. <br /><b
-            ><i
-              >Тому краще не говорити дошкільнику фраз на кшталт: «А якщо всі
-              підуть стрибати з моста в річку?».</i
-            ></b
-          >
-        </p>
-      </div>
-      <section class="courses">
-        <div id="courses"></div>
-      </section>
-      <div class="info-block">
-        <p>
-          <b
-            >Цікавий факт: Діти структурують інформацію в пам'яті із семирічного
-            віку </b
-          ><br />Дитина може запам'ятовувати інформацію і в молодшому віці, але
-          тільки із семи років вона використовує стратегії – певні схеми й інші
-          хитрощі – для запам'ятовування. <br /><b
-            ><i
-              >Це допомагає їй запам'ятовувати більший обсяг інформації, який
-              згодом стане їй у нагоді в навчальному процесі або інших життєвих
-              ситуаціях.</i
-            ></b
-          >
-        </p>
-      </div>
-      <section class="contact">
-        <div id="contact">
-          <div class="contacts">
-            <h2 class="title">Контакти</h2>
-            <div class="contacts__wrapper">
-              <div class="contacts__wrapper__address">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.476295697542!2d30.481220277024434!3d50.320364596721234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7f70dcf25c7%3A0xe0b1911f8b946a9b!2z0LLRg9C70LjRhtGPINCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRliwgMTAsINCl0L7RgtGW0LIsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNzE!5e0!3m2!1suk!2sua!4v1706699941223!5m2!1suk!2sua"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+      <section id="classes">
+        <div class="container">
+          <div class="classes-group">
+            <h2>Групи</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut sit
+              voluptatum, nihil dolore minus itaque optio modi architecto fuga
+              in officia quos explicabo illum eius repellat cupiditate
+              provident. Consectetur, doloribus.
+            </p>
+            <ul>
+              <li>
+                <h3>2-3 Роки</h3>
+                <span></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  quaerat voluptas consequatur quasi necessitatibus atque
+                  molestiae ut nemo rerum eligendi tempora officia eos odio
+                  ducimus quod dolores praesentium in optio quae accusamus,
+                  repudiandae cum expedita facere. Non nobis soluta maxime eum
+                  nisi, omnis deserunt, nostrum at, earum voluptatum excepturi
+                  nihil?
+                </p>
+              </li>
+              <li>
+                <h3>3-5 Років</h3>
+                <span></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  quaerat voluptas consequatur quasi necessitatibus atque
+                  molestiae ut nemo rerum eligendi tempora officia eos odio
+                  ducimus quod dolores praesentium in optio quae accusamus,
+                  repudiandae cum expedita facere. Non nobis soluta maxime eum
+                  nisi, omnis deserunt, nostrum at, earum voluptatum excepturi
+                  nihil?
+                </p>
+              </li>
+              <li>
+                <h3>5-6 Років</h3>
+                <span></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  quaerat voluptas consequatur quasi necessitatibus atque
+                  molestiae ut nemo rerum eligendi tempora officia eos odio
+                  ducimus quod dolores praesentium in optio quae accusamus,
+                  repudiandae cum expedita facere. Non nobis soluta maxime eum
+                  nisi, omnis deserunt, nostrum at, earum voluptatum excepturi
+                  nihil?
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="classes-addons">
+            <h2>Додаткові курси</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio ullam qui dolore quo, quod, voluptas, earum fugit quis
+              nemo similique culpa laudantium voluptatibus placeat ratione at
+              voluptatem commodi quos magni?
+            </p>
+            <div class="classes-box">
+              <div class="img-container">
+                <img
+                  src="./img/vectors/teddy-bear-teddy-bear-svgrepo-com.svg"
+                  alt=""
+                />
               </div>
-              <div class="contacts__wrapper__form-box">
-                <span class="title">Leave a Comment</span>
-                <form class="form">
-                  <div class="group">
-                    <input placeholder="" type="text" required="" />
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="group">
-                    <input
-                      placeholder=""
-                      type="email"
-                      id="email"
-                      name="email"
-                      required=""
-                    />
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="group">
-                    <textarea
-                      placeholder=""
-                      id="comment"
-                      name="comment"
-                      rows="5"
-                      required=""
-                    ></textarea>
-                    <label for="comment">Comment</label>
-                  </div>
-                  <button type="submit">Submit</button>
-                </form>
+
+              <div class="classes-description">
+                <ul>
+                  <li>
+                    <h2>&check;</h2>
+                    <h2>Мистецтво</h2>
+                  </li>
+                  <li>
+                    <h2>&check;</h2>
+                    <h2>Музика та вокал</h2>
+                  </li>
+                  <li>
+                    <h2>&check;</h2>
+                    <h2>Акторська майстерність</h2>
+                  </li>
+                  <li>
+                    <h2>&check;</h2>
+                    <h2>Хореографія</h2>
+                  </li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+                  rem officia expedita possimus quidem reiciendis modi tenetur
+                  asperiores molestias. Dolorem?
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section id="cost">
+        <div class="cost container">
+          <h2>Вартість</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in
+            vitae, voluptas velit corrupti molestiae dicta nesciunt sed neque
+            corporis nobis voluptates eos quis natus iusto, officiis nisi
+            accusamus exercitationem.
+          </p>
+          <div class="cost-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts">
+        <div class="container">
+          <div class="contacts-top">
+            <h2>Контакти</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+              eaque?
+            </p>
+          </div>
+          <div class="contacts-bottom">
+            <div class="contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.476295697542!2d30.481220277024434!3d50.320364596721234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7f70dcf25c7%3A0xe0b1911f8b946a9b!2z0LLRg9C70LjRhtGPINCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRliwgMTAsINCl0L7RgtGW0LIsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNzE!5e0!3m2!1suk!2sua!4v1706699941223!5m2!1suk!2sua"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="contacts-form">
+              <h2>Залишились питання?</h2>
+              <form class="form">
+                <div class="group">
+                  <input placeholder="" type="text" required="" />
+                  <label for="name">Ім'я</label>
+                </div>
+                <div class="group">
+                  <input
+                    placeholder=""
+                    type="email"
+                    id="email"
+                    name="email"
+                    required=""
+                  />
+                  <label for="email">Email</label>
+                </div>
+                <div class="group">
+                  <textarea
+                    placeholder=""
+                    id="comment"
+                    name="comment"
+                    rows="5"
+                    required=""
+                  ></textarea>
+                  <label for="comment">Повідомлення</label>
+                </div>
+                <button type="submit">Надіслати</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer container">
+        <div class="footer-address">
+          <a href="#" class="footer-logo"
+            ><h2><span>Чарівне</span>Зернятко</h2></a
+          >
+          <p>
+            с.Хотів, Київська обл.<br />вул.Незалежності, 10<br />Тел.
+            123-456<br />
+            Email: 6DQp3@example.com
+          </p>
+        </div>
 
-    <footer class="footer">
-      <h1>Footer</h1>
+        <div class="footer-social">
+          <h2>Ми у соцмережах:</h2>
+          <ul>
+            <li>
+              <img
+                src="./img/social/facebook-media-network-svgrepo-com.png"
+                alt=""
+                width="36"
+                height="36"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/social/instagram-media-network-svgrepo-com.png"
+                alt=""
+                width="36"
+                height="36"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/social/viber-svgrepo-com.png"
+                alt=""
+                width="36"
+                height="36"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/social/telegram-svgrepo-com.png"
+                alt=""
+                width="36"
+                height="36"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <script type="module" src="./main.js"></script>
   </body>
