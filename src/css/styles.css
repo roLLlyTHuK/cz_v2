@@ -75,7 +75,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 0;
+  z-index: 10;
   height: 3rem;
   border-bottom: 2px solid var(--pink-color);
   background-color: var(--white-color);
@@ -115,7 +115,7 @@ nav ul li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 20;
 }
 .hero {
   height: 100%;
@@ -195,7 +195,7 @@ nav ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   filter: blur(5px);
@@ -204,7 +204,12 @@ nav ul li {
 .about-benefits ul li {
   min-width: 300px;
   flex-basis: calc((100% - 2rem) / 5);
-  border: 1px solid var(--black-color);
+  background-color: var(--pink-color);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 .about-description {
   width: 100%;
