@@ -16,7 +16,9 @@
 
 html {
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -24,6 +26,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.2;
   margin: 0;
+  padding: 0;
   background-color: var(--light-color);
 }
 
@@ -205,6 +208,11 @@ li:hover a {
   min-width: 300px;
   margin: 2rem auto;
 }
+.about-title img {
+  width: 100%;
+  min-width: 300px;
+  border-radius: 25px;
+}
 .about-benefits {
   width: 90%;
   display: flex;
@@ -241,22 +249,38 @@ li:hover a {
   filter: blur(5px);
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
-.about-description {
+.about-description-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.about-img {
   position: relative;
+  flex-basis: calc((100% - 2rem) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 300px;
+}
+.about-img img {
+  width: 500px;
+  min-width: 300px;
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.about-description {
+  flex-basis: calc((100% - 2rem) / 2);
   width: 100%;
   min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  margin: 2rem auto;
-  margin-right: 4rem;
-}
-
-.about-description p {
-  width: 60%;
-  min-width: 300px;
-  text-align: justify;
+  justify-content: center;
 }
 /*============================|Classes|===========================*/
 
@@ -301,11 +325,10 @@ li:hover a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  row-gap: 1rem;
+  column-gap: 2rem;
 }
 .img-container {
-  position: relative;
-
   flex-basis: calc((100% - 2rem) / 2);
   display: flex;
   align-items: center;
@@ -313,13 +336,15 @@ li:hover a {
   height: 100%;
   min-width: 300px;
 }
-.img-container > .animated-blob-image {
-  filter: blur(5px);
-  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
+.img-container img {
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden;
 }
 .classes-description {
   flex-basis: calc((100% - 2rem) / 2);
-
   min-width: 300px;
 }
 .classes-addons ul {
@@ -501,7 +526,7 @@ li:hover a {
 /*============================|Footer|===========================*/
 footer {
   background-color: var(--black-color);
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 .footer {
   max-width: 1440px;
@@ -575,6 +600,9 @@ footer {
   a {
     font-size: 1.1rem;
   }
+  .classes-box {
+    margin: 0;
+  }
   .footer-social ul li img {
     width: 32px;
     height: 32px;
@@ -590,14 +618,7 @@ footer {
   h2 {
     font-size: 2rem;
   }
-  .about-description {
-    align-items: flex-end;
-  }
-  .about-description p {
-    width: 50%;
-    min-width: 300px;
-    text-align: justify;
-  }
+
   .footer-address,
   .footer-social {
     align-items: flex-start;
@@ -659,7 +680,7 @@ footer {
 }
 .animated-blob-image {
   border-radius: 23% 31% 30% 67% / 72% 47% 40% 26%;
-  width: 500px;
+
   min-width: 250px;
   height: auto;
   background: linear-gradient(#a03692, #b46ca8, #c0aec5);
