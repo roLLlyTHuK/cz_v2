@@ -295,7 +295,7 @@ li:hover a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
   margin-bottom: 2rem;
@@ -524,7 +524,7 @@ li:hover a {
 /*============================|Footer|===========================*/
 footer {
   background-color: var(--black-color);
-  /* padding: 2rem; */
+  padding: 1rem 0;
 }
 .footer {
   max-width: 1440px;
@@ -561,8 +561,8 @@ footer {
 .footer-logo h2 span {
   color: var(--red-color);
 }
-.footer-social {
-  gap: 0.5rem;
+.footer-social h2 {
+  margin-bottom: 0.3rem;
 }
 .footer-social ul {
   list-style: none;
@@ -576,8 +576,8 @@ footer {
 }
 .footer-social ul li img {
   border-radius: 8px;
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
 }
 /*============================|Media Queries|===========================*/
 @media only screen and (min-width: 768px) {
