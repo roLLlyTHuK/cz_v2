@@ -147,9 +147,6 @@ li:hover a {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-
-  filter: blur(5px);
-  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 .hero-title {
   display: flex;
@@ -158,6 +155,8 @@ li:hover a {
   gap: 1rem;
   margin-bottom: 2rem;
   text-align: center;
+  filter: blur(5px);
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 .hero-title h2 {
   color: var(--red-color);
@@ -177,6 +176,7 @@ li:hover a {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
+  text-transform: capitalize;
   color: var(--black-color);
   background-color: var(--pink-color);
   border: 1px solid var(--black-color);
@@ -190,9 +190,12 @@ li:hover a {
   background-color: var(--red-color);
   color: var(--white-color);
   border: 1px solid var(--white-color);
+  filter: blur(5px);
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 
 /*============================|About|===========================*/
+
 .about-title {
   text-align: center;
   margin-bottom: 2rem;
