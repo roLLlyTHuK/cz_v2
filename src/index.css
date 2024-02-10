@@ -200,14 +200,18 @@ li:hover a {
 /*============================|About|===========================*/
 
 .about-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 2rem;
+  gap: 1rem;
   width: 50%;
   min-width: 300px;
   margin: 2rem auto;
 }
 .about-title img {
-  width: 100%;
+  width: 120%;
   min-width: 300px;
   border-radius: 25px;
 }
