@@ -18,7 +18,9 @@
     
     
     <script type="module" crossorigin src="/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/assets/index-27874190.css">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-f3f72abd.js">
+    <link rel="stylesheet" href="/assets/vendor-b16a6001.css">
+    <link rel="stylesheet" href="/assets/index-9d85da1a.css">
   </head>
   <body>
     <header>
@@ -56,8 +58,14 @@
         <div class="container">
           <div class="about-title">
             <h2>Що таке Чарівне зернятко</h2>
-            <img src="/assets/fixiki-6ff6aa4b.webp" alt="" />
-            <p>
+            <img
+              src="/assets/fixiki-6ff6aa4b.webp"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="5000"
+            />
+            <p data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde
               dolorem ipsa cumque provident voluptatum deleniti, cum distinctio
               iure non! Magni, tempore ipsam sed minus est ut explicabo aut
@@ -67,7 +75,7 @@
           <div class="about-benefits">
             <h2>Наші переваги</h2>
             <ul>
-              <li>
+              <li data-aos="fade-up">
                 <div class="benefits-img-wrapper">
                   <img src="data:image/png;base64,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" alt="" />
                 </div>
@@ -75,7 +83,7 @@
                   <p>Частний будинок з закритою територією</p>
                 </div>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <div class="benefits-img-wrapper">
                   <img src="data:image/png;base64,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" alt="" />
                 </div>
@@ -83,7 +91,7 @@
                   <p>Індивідуальний підхід та сучасні методики розвитку</p>
                 </div>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <div class="benefits-img-wrapper">
                   <img src="data:image/png;base64,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" alt="" />
                 </div>
@@ -91,7 +99,7 @@
                   <p>Повноцінна підготовка до школи</p>
                 </div>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <div class="benefits-img-wrapper">
                   <img src="data:image/png;base64,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" alt="" />
                 </div>
@@ -99,7 +107,7 @@
                   <p>Активний відпочинок на свіжому повітрі</p>
                 </div>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <div class="benefits-img-wrapper">
                   <img src="data:image/png;base64,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" alt="" />
                 </div>
@@ -107,7 +115,7 @@
                   <p>Різномантіні мистецькі заняття</p>
                 </div>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <div class="benefits-img-wrapper">
                   <img src="data:image/png;base64,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" alt="" />
                 </div>
@@ -119,11 +127,18 @@
           </div>
           <div class="about-description-box">
             <div class="about-img">
-              <img src="/assets/learn-d2c3165a.webp" alt="" />
+              <img
+                src="/assets/learn-d2c3165a.webp"
+                alt=""
+                data-aos="zoom-in-right"
+                data-aos-offset="300"
+                data-aos-easing="easy-in-out"
+                data-aos-duration="1000"
+              />
             </div>
             <div class="about-description">
               <h2>Як ми вчимо</h2>
-              <p>
+              <p data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
                 iure, corporis minima aut in ratione architecto nesciunt esse
                 laborum porro mollitia voluptas? Magnam minima quia quidem nam
@@ -140,14 +155,14 @@
         <div class="container">
           <div class="classes-group">
             <h2>Групи</h2>
-            <p>
+            <p data-aos="fade-up">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut sit
               voluptatum, nihil dolore minus itaque optio modi architecto fuga
               in officia quos explicabo illum eius repellat cupiditate
               provident. Consectetur, doloribus.
             </p>
             <ul>
-              <li>
+              <li data-aos="fade-up">
                 <h3>2-3 Роки</h3>
 
                 <p>
@@ -160,7 +175,7 @@
                   nihil?
                 </p>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <h3>3-5 Років</h3>
 
                 <p>
@@ -173,7 +188,7 @@
                   nihil?
                 </p>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <h3>5-6 Років</h3>
 
                 <p>
@@ -190,7 +205,7 @@
           </div>
           <div class="classes-addons">
             <h2>Додаткові курси</h2>
-            <p>
+            <p data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio ullam qui dolore quo, quod, voluptas, earum fugit quis
               nemo similique culpa laudantium voluptatibus placeat ratione at
@@ -201,30 +216,33 @@
                 <img
                   src="/assets/fixiki-horovod-7da2a56f.webp"
                   alt=""
-                  style="object-position: 0 0; width: 100%; height: auto"
+                  data-aos="zoom-in-right"
+                  data-aos-offset="300"
+                  data-aos-easing="easy-in-out"
+                  data-aos-duration="1000"
                 />
               </div>
 
               <div class="classes-description">
                 <ul>
-                  <li>
+                  <li data-aos="fade-up">
                     <h2>&check;</h2>
                     <h2>Живопис</h2>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <h2>&check;</h2>
                     <h2>Музика та вокал</h2>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <h2>&check;</h2>
                     <h2>Акторська майстерність</h2>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <h2>&check;</h2>
                     <h2>Хореографія</h2>
                   </li>
                 </ul>
-                <p>
+                <p data-aos="fade-up">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
                   rem officia expedita possimus quidem reiciendis modi tenetur
                   asperiores molestias. Dolorem?
@@ -237,19 +255,19 @@
       <section id="cost">
         <div class="cost container">
           <h2>Вартість</h2>
-          <p>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in
             vitae, voluptas velit corrupti molestiae dicta nesciunt sed neque
             corporis nobis voluptates eos quis natus iusto, officiis nisi
             accusamus exercitationem.
           </p>
           <ul class="cost-container">
-            <li>Група повного дня</li>
-            <li>Англійська мова</li>
-            <li>Акторська майстерність</li>
-            <li>Вокал</li>
-            <li>Хореографія</li>
-            <li>Живопис</li>
+            <li data-aos="fade-up">Група повного дня</li>
+            <li data-aos="fade-up">Англійська мова</li>
+            <li data-aos="fade-up">Акторська майстерність</li>
+            <li data-aos="fade-up">Вокал</li>
+            <li data-aos="fade-up">Хореографія</li>
+            <li data-aos="fade-up">Живопис</li>
           </ul>
         </div>
       </section>
@@ -257,7 +275,7 @@
         <div class="container">
           <div class="contacts-top">
             <h2>Контакти</h2>
-            <p>
+            <p data-aos="fade-up">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
               eaque?
             </p>
