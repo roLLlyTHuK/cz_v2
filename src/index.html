@@ -15,8 +15,12 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="./css/blobz.css" />
+  
   </head>
   <body>
     <header>
@@ -36,6 +40,7 @@
         <div class="container hero">
           <div class="hero-blank">
             <div class="hero-title">
+            
               <h2>Ласкаво просимо відвідати</h2>
               <h1>Чарівне зернятко</h1>
               <h2>Дитячий центр розвитку</h2>
@@ -53,7 +58,7 @@
       <section id="about">
         <div class="container">
           <div class="about-title">
-            <h2 data-aos="fade-up">Що таке "Чарівне зернятко"</h2>
+            <h2 data-aos="fade-up" once>Що таке "Чарівне зернятко"</h2>
             <p data-aos="fade-up" data-aos-delay="200">
               У нашому центрі розвитку головний пріоритет - ваша дитина. Тут
               панує атмосфера родинного тепла, де ми гарантуємо безпеку кожної
@@ -76,6 +81,7 @@
                 <div class="benefits-img-wrapper">
                   <img src="./img/benefits/house.png" alt="" />
                 </div>
+                <div class="v-divider"></div>
                 <div class="benefits-text-wrapper">
                   <p>Приватний будинок з закритою територією</p>
                 </div>
@@ -84,6 +90,7 @@
                 <div class="benefits-img-wrapper">
                   <img src="./img/benefits/character.png" alt="" />
                 </div>
+                <div class="v-divider"></div>
                 <div class="benefits-text-wrapper">
                   <p>Індивідуальний підхід та сучасні методики розвитку</p>
                 </div>
@@ -92,6 +99,7 @@
                 <div class="benefits-img-wrapper">
                   <img src="./img/benefits/reading.png" alt="" />
                 </div>
+                <div class="v-divider"></div>
                 <div class="benefits-text-wrapper">
                   <p>Повноцінна підготовка до школи</p>
                 </div>
@@ -100,6 +108,7 @@
                 <div class="benefits-img-wrapper">
                   <img src="./img/benefits/kite.png" alt="" />
                 </div>
+                <div class="v-divider"></div>
                 <div class="benefits-text-wrapper">
                   <p>Активний відпочинок на свіжому повітрі</p>
                 </div>
@@ -108,6 +117,7 @@
                 <div class="benefits-img-wrapper">
                   <img src="./img/benefits/art.png" alt="" />
                 </div>
+                <div class="v-divider"></div>
                 <div class="benefits-text-wrapper">
                   <p>Різномантіні мистецькі заняття</p>
                 </div>
@@ -116,6 +126,7 @@
                 <div class="benefits-img-wrapper">
                   <img src="./img/benefits/food.png" alt="" />
                 </div>
+                <div class="v-divider"></div>
                 <div class="benefits-text-wrapper">
                   <p>Збалансоване здорове харчування</p>
                 </div>
@@ -124,6 +135,19 @@
           </div>
           <div class="about-description-box">
             <div class="about-img">
+              <!-- <img
+                src="./img/learn.webp"
+                alt=""
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="easy-in-out"
+                data-aos-duration="1000"
+              /> -->
+              <div class="swiper">
+ 
+  <div class="swiper-wrapper">
+  
+    <div class="swiper-slide"> <div class="about-img">
               <img
                 src="./img/learn.webp"
                 alt=""
@@ -132,7 +156,35 @@
                 data-aos-easing="easy-in-out"
                 data-aos-duration="1000"
               />
+            </div></div>
+    <div class="swiper-slide"> <div class="about-img">
+              <img
+                src="./img/learn.webp"
+                alt=""
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="easy-in-out"
+                data-aos-duration="1000"
+              />
+            </div></div>
+    <div class="swiper-slide"> <div class="about-img">
+              <img
+                src="./img/learn.webp"
+                alt=""
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="easy-in-out"
+                data-aos-duration="1000"
+              />
+            </div></div>
+    
+  </div>
+  <div class="swiper-navigation"></div>
+  <div class="swiper-pagination"></div>
+
+</div>
             </div>
+            
             <div class="about-description">
               <h2 data-aos="fade-left"    
                   data-aos-offset="100"
@@ -168,7 +220,7 @@
             <ul>
               <li data-aos="fade-up" data-aos-delay="0">
                 <h3>2-3 Роки</h3>
-
+                <div class="h-divider"></div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   quaerat voluptas consequatur quasi necessitatibus atque
@@ -181,7 +233,7 @@
               </li>
               <li data-aos="fade-up" data-aos-delay="200">
                 <h3>3-5 Років</h3>
-
+<div class="h-divider"></div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   quaerat voluptas consequatur quasi necessitatibus atque
@@ -194,7 +246,7 @@
               </li>
               <li data-aos="fade-up" data-aos-delay="400">
                 <h3>5-6 Років</h3>
-
+<div class="h-divider"></div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   quaerat voluptas consequatur quasi necessitatibus atque
@@ -373,6 +425,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
