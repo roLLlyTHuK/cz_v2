@@ -1,21 +1,28 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
+let swiper = new Swiper('.swiper', {
+  spaceBetween: 20,
+  centeredSlides: true,
   navigation: true,
   pagination: true,
-  mousewheel: {
-    forceToAxis: true,
+  loop: true,
+  speed: 800,
+  // slidesPerView: 1,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
   },
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    // clickable: true,
+    dynamicBullets: true,
   },
 });
 
