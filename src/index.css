@@ -116,15 +116,16 @@ header {
 }
 header .container {
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
   margin: 0 auto;
 }
 nav {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -144,8 +145,6 @@ nav ul li {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   padding: 0.2rem;
-  background-color: transparent;
-  border-radius: 25px;
 }
 
 li:hover a {
@@ -160,11 +159,6 @@ li:hover a {
   position: relative;
   z-index: 20;
   height: 100dvh;
-  padding: 0;
-  /* background-image: url(../src/img/baloons_1280.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
 }
 
 #video-background {
@@ -186,7 +180,6 @@ li:hover a {
   align-items: center;
 }
 .hero-blank {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,8 +193,6 @@ li:hover a {
   gap: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-  filter: blur(5px);
-  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
 .hero-title h2 {
   color: var(--red-color);
@@ -280,6 +271,8 @@ li:hover a {
   max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: bottom;
+  object-position: center;
   cursor: pointer;
   position: relative;
   transition: 0.5s;
@@ -711,6 +704,11 @@ footer {
   p,
   a {
     font-size: 1.1rem;
+  }
+  .hero-blank {
+    border-radius: 15px;
+    background-color: rgba(239, 237, 240, 0.5);
+    filter: blur(5px), drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
   }
   .classes-box {
     margin: 0;
