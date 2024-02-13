@@ -31,23 +31,3 @@ let swiper = new Swiper('.swiper', {
 AOS.init({
   once: true,
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-  const images = document.querySelectorAll('.about-gallery img');
-
-  images.forEach(function (image) {
-    image.addEventListener('click', function () {
-      // Дублируем изображение, чтобы отобразить его увеличенным
-      const enlargedImage = image.cloneNode(true);
-      enlargedImage.classList.add('enlarged');
-
-      // Добавляем увеличенное изображение в body
-      document.body.appendChild(enlargedImage);
-
-      // При клике на увеличенное изображение убираем его
-      enlargedImage.addEventListener('click', function () {
-        enlargedImage.remove();
-      });
-    });
-  });
-});
