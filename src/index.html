@@ -21,14 +21,29 @@
   <header>
     <div class="container">
       <nav>
-
+        <a href="#" class="logo"><h2><span>Чарівне</span>Зернятко</h2></a>
         <ul>
           <li><a href="#about">Про нас</a></li>
           <li><a href="#classes">Навчання</a></li>
           <li><a href="#cost">Вартість</a></li>
           <li><a href="#contacts">Контакти</a></li>
         </ul>
+        <div class="hamburger-menu" onclick="toggleMobileMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
+          <div class="mobile-menu">
+            <button class="close" onclick="toggleMobileMenu()">&#215;</button>
+            <div class="mobile-menu-item"><a href="#about" onclick="toggleMobileMenu()">Про нас</a></div>
+            <div class="mobile-menu-item"><a href="#classes" onclick="toggleMobileMenu()">Навчання</a></div>
+            <div class="mobile-menu-item"><a href="#cost" onclick="toggleMobileMenu()">Вартість</a></div>
+            <div class="mobile-menu-item"><a href="#contacts" onclick="toggleMobileMenu()">Контакти</a></div>
+          </div>
+        
       </nav>
+
     </div>
   </header>
   <main>
@@ -329,7 +344,7 @@
                 <p>П'ятиразове харчування</p>
               </li>
             </ul>
-            
+
             <div class="cost-marker"><span>###</span>ГРН/міс</div>
           </div>
           <div class="cost-item" data-aos="fade-up" data-aos-delay="200">
@@ -347,7 +362,7 @@
                 <p><b>К-ть занять:</b> 2 рази на тиждень</p>
               </li>
             </ul>
-            
+
             <div class="cost-marker"><span>###</span>ГРН/міс</div>
           </div>
           <div class="cost-item" data-aos="fade-up" data-aos-delay="400">
@@ -355,7 +370,7 @@
             <div class="h-divider"></div>
             <div class="cost-time">Пн: 9:00 - 11:00</div>
             <ul class="cost-list">
-                <li>
+              <li>
                 <p><b>Тематика:</b> основи акторської майстерності та імпровізація</p>
               </li>
               <li>
@@ -365,7 +380,7 @@
                 <p><b>К-ть занять:</b> 1 раз на тиждень</p>
               </li>
             </ul>
-            
+
             <div class="cost-marker"><span>###</span>ГРН/міс</div>
           </div>
           <div class="cost-item" data-aos="fade-up" data-aos-delay="600">
@@ -373,7 +388,7 @@
             <div class="h-divider"></div>
             <div class="cost-time">Пн-пт: 9:00 - 18:00</div>
             <ul class="cost-list">
-                <li>
+              <li>
                 <p><b>Тематика:</b> основи музики та вокальна техніка</p>
               </li>
               <li>
@@ -383,7 +398,7 @@
                 <p><b>К-ть занять:</b> 3 рази на тиждень</p>
               </li>
             </ul>
-            
+
             <div class="cost-marker"><span>###</span>ГРН/міс</div>
           </div>
           <div class="cost-item" data-aos="fade-up" data-aos-delay="800">
@@ -391,7 +406,7 @@
             <div class="h-divider"></div>
             <div class="cost-time">Пн-пт: 9:00 - 18:00</div>
             <ul class="cost-list">
-                <li>
+              <li>
                 <p><b>Тематика:</b> сучасні танці та хореографічні елементи</p>
               </li>
               <li>
@@ -401,7 +416,7 @@
                 <p><b>К-ть занять:</b> 2 рази на тиждень</p>
               </li>
             </ul>
-            
+
             <div class="cost-marker"><span>###</span>ГРН/міс</div>
           </div>
           <div class="cost-item" data-aos="fade-up" data-aos-delay="1000">
@@ -409,7 +424,7 @@
             <div class="h-divider"></div>
             <div class="cost-time">Пн-пт: 9:00 - 18:00</div>
             <ul class="cost-list">
-                <li>
+              <li>
                 <p><b>Тематика:</b> основи малювання</p>
               </li>
               <li>
@@ -503,6 +518,12 @@
       </div>
     </div>
   </footer>
+  <script>
+  function toggleMobileMenu() {
+    var mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('active');
+  }
+</script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script type="module" src="./main.js"></script>
 </body>
