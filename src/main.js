@@ -12,7 +12,7 @@ let swiper = new Swiper('.swiper', {
 
   autoplay: {
     delay: 2500,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   effect: 'coverflow',
   coverflowEffect: {
