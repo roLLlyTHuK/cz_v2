@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.2;
   margin: 0;
@@ -75,8 +76,7 @@ a {
   font-size: 0.9rem;
 }
 li {
-  list-style-type: none;
-  /* color: var(--black-color); */
+  border: 2px solid var(--black-color);
 }
 section {
   padding: 0.5rem 0;
@@ -108,9 +108,11 @@ section {
 
 header {
   position: fixed;
+
   top: 0;
+  left: 0;
   width: 100dvw;
-  z-index: 10;
+  z-index: 999;
 
   background-color: transparent;
   padding: 0;
@@ -148,6 +150,7 @@ nav ul li {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   padding: 0.2rem;
+  border: none;
 }
 
 li:hover a {
@@ -263,14 +266,14 @@ li:hover a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 12px; /* change space between image here */
-  max-width: 1200px;
+  gap: 12px;
+  max-width: 1440px;
   margin: auto;
 }
 
 .about-gallery img {
   flex: 1 1 0;
-  height: 250px; /* change line height here */
+  height: 250px;
   width: auto;
   max-width: 100%;
   -o-object-fit: cover;
@@ -301,7 +304,7 @@ li:hover a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
   margin-bottom: 2rem;
@@ -316,6 +319,7 @@ li:hover a {
   align-items: center;
   column-gap: 1rem;
   padding: 0.5rem;
+  outline: 7px solid var(--pink-color);
   transition: all 0.3s ease-in-out;
 }
 .about-benefits ul li img {
@@ -403,6 +407,7 @@ li:hover a {
   align-items: center;
   padding: 1rem 2rem;
   text-align: center;
+  outline: 7px solid var(--pink-color);
   transition: all 0.3s ease-in-out;
 }
 .classes-group ul li:hover {
@@ -442,6 +447,7 @@ li:hover a {
 }
 
 .classes-addons ul li {
+  border: none;
   display: flex;
   gap: 1rem;
 }
@@ -467,11 +473,12 @@ li:hover a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0;
 }
 
-.cost-container li {
+.cost-item {
+  position: relative;
   min-width: 300px;
   flex-basis: calc((100% - 2rem) / 5);
   background-color: var(--pink-color);
@@ -480,10 +487,59 @@ li:hover a {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--black-color);
+  outline: 7px solid var(--pink-color);
   transition: all 0.3s ease-in-out;
 }
+.cost-time {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 0;
+}
 
-.cost-container li:hover {
+.cost-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border: none;
+  margin: 1rem auto;
+  padding: 0;
+}
+
+.cost-list li {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cost-marker {
+  position: absolute;
+  bottom: -1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--black-color);
+  background-color: var(--pink-color);
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--black-color);
+  outline: 5px solid var(--pink-color);
+  border-radius: 25px;
+}
+.cost-marker span {
+  color: var(--red-color);
+  font-size: 1.5rem;
+}
+.cost-item:hover {
   filter: blur(5px);
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
