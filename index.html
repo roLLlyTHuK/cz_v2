@@ -25,7 +25,9 @@
   <header>
     <div class="container">
       <nav>
-        <a href="#" class="logo"><h2><span>Чарівне</span>Зернятко</h2></a>
+        <a href="#" class="logo">
+          <h2><span>Чарівне</span>Зернятко</h2>
+        </a>
         <ul>
           <li><a href="#about">Про нас</a></li>
           <li><a href="#classes">Навчання</a></li>
@@ -37,15 +39,19 @@
           <div></div>
           <div></div>
         </div>
-        
-          <div class="mobile-menu">
-            <button class="close" onclick="toggleMobileMenu()">&#215;</button>
-            <div class="mobile-menu-item"><a href="#about" onclick="toggleMobileMenu()">Про нас</a></div>
-            <div class="mobile-menu-item"><a href="#classes" onclick="toggleMobileMenu()">Навчання</a></div>
-            <div class="mobile-menu-item"><a href="#cost" onclick="toggleMobileMenu()">Вартість</a></div>
-            <div class="mobile-menu-item"><a href="#contacts" onclick="toggleMobileMenu()">Контакти</a></div>
-          </div>
-        
+
+        <div class="mobile-menu">
+          <button class="close" onclick="toggleMobileMenu()">&#215;</button>
+          <div class="mobile-menu-item">
+            <a href="#about" onclick="toggleMobileMenu()">Про нас</a></div>
+          <div class="mobile-menu-item">
+            <a href="#classes" onclick="toggleMobileMenu()">Навчання</a></div>
+          <div class="mobile-menu-item">
+            <a href="#cost" onclick="toggleMobileMenu()">Вартість</a></div>
+          <div class="mobile-menu-item">
+            <a href="#contacts" onclick="toggleMobileMenu()">Контакти</a></div>
+        </div>
+
       </nav>
 
     </div>
@@ -523,11 +529,11 @@
     </div>
   </footer>
   <script>
-  function toggleMobileMenu() {
-    var mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.classList.toggle('active');
-  }
-</script>
+    function toggleMobileMenu() {
+      var mobileMenu = document.querySelector('.mobile-menu');
+      mobileMenu.classList.toggle('active');
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   
 </body>
