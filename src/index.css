@@ -19,18 +19,20 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--black-color);
+  background-color: var(--pink-color);
+  border: 1px solid var(--black-color);
   border-radius: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--pink-color);
+  background-color: var(--bg-color);
 }
 
 html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -316,6 +318,45 @@ li:hover a {
   gap: 1rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.h1-title {
+  background-color: #f95454;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+
+  animation: jello-horizontal 2s ease-in-out;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(0, 0, 0);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .hero-title h2 {
