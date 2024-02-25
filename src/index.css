@@ -32,7 +32,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 1rem;
+  scroll-padding-top: 2rem;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -140,7 +140,7 @@ header {
 }
 
 header .container {
-  padding: 0 10px;
+  padding: 10px 20px;
   margin: 0 auto;
 }
 
@@ -175,22 +175,31 @@ nav ul {
 }
 
 nav ul li {
+  display: flex;
   font-family: var(--subtitle-fonts);
   line-height: 1;
   margin: 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  padding: 0.2rem;
-  border: none;
+  border: 1px solid var(--black-color);
+  border-radius: 12px;
+  padding: 4px 20px;
+  background-color: var(--pink-color);
+  transition: all 0.3s ease-in-out;
 }
-
-li:hover a {
-  color: var(--red-color);
+nav ul li a {
+  color: var(--black-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+nav ul li:hover {
+  background-color: var(--red-color);
+  transform: scale(1.1);
   filter: blur(5px);
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
+}
+nav ul li:hover a {
+  color: var(--white-color);
 }
 
 .hamburger-menu {
@@ -393,7 +402,6 @@ li:hover a {
 .hero-button:hover {
   background-color: var(--red-color);
   color: var(--white-color);
-
   transform: scale(1.1);
   filter: blur(5px);
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
@@ -730,6 +738,7 @@ li:hover a {
 }
 
 .cost-item:hover {
+  transform: scale(1.1);
   filter: blur(5px);
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
 }
